@@ -1,0 +1,102 @@
+﻿<Page x:Class="Chrono_task_2._0.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Chrono_task_2._0"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="LandigPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.22*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <Border CornerRadius="20 0 0 0">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.1,1.7">
+                    <GradientStop Color="#000033" Offset="1"/>
+                    <GradientStop Color="#00FFFF" Offset="0"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel VerticalAlignment="Center" Margin="10 0 0 0">
+                    <Button Style="{StaticResource ButtonPersonalInfo}" Height="73" Width="73">
+                        
+                    </Button>
+                    
+                </StackPanel>
+                
+                
+                <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="20 0 0 0">
+                    <TextBlock Text="Projects" Background="Transparent" Foreground="White" FontWeight="Bold" FontSize="30"/>
+                </StackPanel>
+            </Grid>
+            
+            
+
+        </Border>
+
+
+
+        <Border Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="7.5*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Border Background="#d5d8dc">
+                    
+                </Border>
+
+
+                <Border Background="#3498db" Grid.Row="1" CornerRadius="0 0 0 20">
+                    <StackPanel>
+                        <Button Content="Add Project" Style="{StaticResource ButtonSignUP}" Margin="0 5 0 0" Width="142"/>
+                    </StackPanel>
+                </Border>
+                
+            </Grid>
+        </Border>
+
+        <Border Grid.Column="1" Background="#909497" BorderThickness="3" BorderBrush="White" CornerRadius="0 20 0 0">
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock Text="INBOX" Style="{StaticResource TitleText}"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="1" Background="#909497" BorderThickness="3" BorderBrush="White" CornerRadius="0 0 20 0">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="8*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+
+
+
+
+                <StackPanel Grid.Row="1">
+                    <Button Content="Add Task" Style="{StaticResource ButtonSignUP}" Margin="0 0 0 0" Width="123"/>
+                </StackPanel>
+
+            </Grid>
+        </Border>
+    </Grid>
+</Page>
