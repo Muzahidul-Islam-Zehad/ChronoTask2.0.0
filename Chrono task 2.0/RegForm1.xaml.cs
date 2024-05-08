@@ -23,5 +23,12 @@ namespace Chrono_task_2._0
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow w  = new MainWindow();
+            w.Show();
+            this.Close();
+        }
     }
 }

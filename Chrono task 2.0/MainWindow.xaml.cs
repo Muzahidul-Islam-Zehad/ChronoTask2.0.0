@@ -27,12 +27,16 @@ namespace Chrono_task_2._0
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            RegForm1 reg = new RegForm1();
+            reg.Show();
+            Close();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            Landing L = new Landing();
+            L.Show();
+            Close();
         }
     }
 
