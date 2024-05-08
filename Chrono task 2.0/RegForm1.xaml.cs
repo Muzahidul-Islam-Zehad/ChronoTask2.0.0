@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Chrono_task_2._0
 {
     /// <summary>
-    /// Interaction logic for RegForm.xaml
+    /// Interaction logic for RegForm1.xaml
     /// </summary>
-    public partial class RegForm : Page
+    public partial class RegForm1 : Window
     {
-        public RegForm()
+        public RegForm1()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            
         }
     }
 }

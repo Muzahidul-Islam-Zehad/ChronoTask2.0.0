@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Chrono_task_2._0
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for Landing.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class Landing : Window
     {
-        public Page1()
+        public Landing()
         {
             InitializeComponent();
         }
